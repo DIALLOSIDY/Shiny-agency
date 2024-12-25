@@ -7,6 +7,7 @@ import Survey from './pages/home/survey'
 import Header from './pages/Header';
 import Result from  './pages/Results'
 import Freelance from './pages/Freelances';
+import Error from './components/Error';
 
 
 
@@ -21,6 +22,7 @@ ReactDOM.render(
             <Route path='/survey/:questionID' element ={<Survey/>}></Route>
             <Route path='/freelance' element ={<Freelance/>}></Route>
             <Route path='/result' element={<Result/>}></Route>
+            <Route path='*' element={<Error/>}></Route>
 
         </Routes>
     </Router>
